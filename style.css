@@ -1,0 +1,186 @@
+:root {
+    --primary: rgb(196, 152, 197);
+    --text: #330034;
+    --bg: #fbd9ed;
+    --white: #fff;
+    --hover: #ffeea9;
+    --shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background: var(--primary);
+    padding: 10px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--hover);
+}
+
+.personal {
+    background: var(--primary);
+    color: var(--white);
+    padding: 40px 20px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.personal img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.objectives {
+    flex: 1;
+    text-align: left;
+}
+
+.edu-item, .project-item {
+    background: var(--white);
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s;
+    text-align: left;
+    border-left: 4px solid transparent;
+}
+
+.edu-item:hover, .project-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    border-left-color: var(--primary);
+}
+
+.dates, .institute {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+footer {
+    background: rgb(123, 0, 111);
+    color: var(--white);
+    padding: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social a i {
+    font-size: 30px; 
+    color: var(--white);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social a:hover i {
+    color: var(--hover); 
+    transform: scale(1.2); 
+}
+
+@media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .personal {
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .objectives {
+        text-align: center;
+    }
+}
+
+.personal .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.personal img {
+    border-radius: 50%;
+}
+
+.objectives {
+    flex: 1; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.social a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: rgb(123, 0, 111);
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: rgb(123, 0, 111);
+}
+
+.edu-item, .project-item {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: rgb(123, 0, 111); 
+}
+
+main {
+    margin-top: 20px; 
+}
+
+.navbar-expand-lg navbar-dark{background-color: rgb(123, 0, 98);}
+
